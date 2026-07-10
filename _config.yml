@@ -1,4 +1,4 @@
-theme: jekyll-theme-consulting
+remote_theme: apehex/jekyll-theme-consulting
 title: Thuned LLC
 description: Security consulting and paid speaking engagements
 show_excerpts: true

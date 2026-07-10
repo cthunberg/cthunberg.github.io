@@ -4,32 +4,68 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-This is a simple static website hosted on GitHub Pages. The project consists of:
-- `index.html`: The main HTML file.
-- `README.md`: This file.
+This is a static GitHub Pages site built with Jekyll using the `jekyll-theme-consulting` theme for Thuned LLC, an information security consulting company.
 
-The HTML references `style.css` and `favicon.ico`, but these files are not present in the repository.
+## Files & Directories
+
+- `_config.yml` - Jekyll configuration
+- `index.md` - Homepage content
+- `about.md` - About page
+- `services.md` - Services offered
+- `contact.md` - Contact information
+- `_posts/` - Blog posts (Markdown files)
+- `CLAUDE.md` - This file (excluded from Jekyll processing)
+- `README.md` - Original repository readme (excluded)
 
 ## Development
 
-There are no build steps or dependencies. To view the site locally, simply open `index.html` in a web browser.
+### Prerequisites
+
+- Ruby (version compatible with Jekyll)
+- Bundler (Ruby gem manager)
+
+### Local Development
+
+1. Install dependencies:
+   ```bash
+   bundle install
+   ```
+
+2. Serve the site locally:
+   ```bash
+   bundle exec jekyll serve
+   ```
+
+3. Open `http://localhost:4000` in your browser
+
+### Building for Production
+
+GitHub Pages automatically builds the site when you push to the `main` branch. To build locally for preview:
+
+```bash
+bundle exec jekyll build
+```
+
+The generated site will be in the `_site/` directory.
+
+## Content Updates
+
+- Update page content by editing the `.md` files in the root directory
+- Add blog posts as Markdown files in `_posts/` with the format `YYYY-MM-DD-title.md`
+- Front matter (YAML between triple dashes) at the top of each file controls layout and metadata
 
 ## Deployment
 
-The site is configured to be published on GitHub Pages from the `main` branch (the root of the repository). Pushes to `main` will automatically update the site.
+This site is configured to publish from the `main` branch root. Simply push changes to GitHub and GitHub Pages will automatically rebuild and deploy the site.
 
 ## Code Style
 
-- HTML: Use 2-space indentation.
-- CSS: Not present, but if added, use 2-space indentation.
-- Comments: Use HTML comments (`<!-- -->`) for HTML and standard CSS comments for CSS.
+- Use 2-space indentation for Markdown and YAML
+- Keep line lengths reasonable (< 100 characters) for readability
+- Use descriptive filenames for blog posts
 
-## Known Issues
+## Known Considerations
 
-- The `style.css` and `favicon.ico` files referenced in `index.html` are missing. To fix, either create these files or remove the references from `index.html`.
-
-## Claude Code Specifics
-
-- When working on this repository, Claude Code should focus on maintaining the simplicity of the static site.
-- Avoid introducing complex build tools or frameworks unless explicitly requested.
-- Ensure any changes are compatible with GitHub Pages (static HTML, CSS, JavaScript).
+- The `jekyll-theme-consulting` theme provides built-in styling and layout
+- For a functional contact form, integrate with a third-party service like Formspree or Getform
+- Images and other assets can be placed in an `assets/` directory and referenced accordingly

@@ -4,6 +4,8 @@ title: Contact
 permalink: /contact/
 ---
 
+{% include nav.html %}
+
 Ready to discuss your security needs or book a speaking engagement?
 
 **Email:** info@thuned.com  

@@ -4,6 +4,8 @@ title: Services
 permalink: /services/
 ---
 
+{% include nav.html %}
+
 ## Security Consulting
 
 We offer comprehensive security consulting services including:

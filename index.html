@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thuned LLC – Virtual CISO & Security Consulting</title>
+  <style>
+    body {font-family: Arial, sans-serif; line-height: 1.6; margin:0; padding:0; color:#333; background:#f9f9f9;}
+    header {background:#003366; color:#fff; padding:2rem 1rem; text-align:center;}
+    nav {background:#004080; color:#fff; display:flex; flex-wrap:wrap; justify-content:center; gap:1rem; padding:0.5rem;}
+    nav a {color:#fff; text-decoration:none; padding:0.5rem 1rem; border-radius:4px;}
+    nav a:hover {background:#0055a4;}
+    section {max-width:960px; margin:2rem auto; padding:0 1rem;}
+    h2 {color:#003366; border-bottom:2px solid #004080; padding-bottom:0.3rem;}
+    ul {list-style:none; padding:0;}
+    li {margin:0.5rem 0; padding-left:1.5rem; position:relative;}
+    li:before {content:"•"; color:#004080; position:absolute; left:0;}
+    .cta {background:#e6f2ff; border-left:4px solid #004080; padding:1rem; margin:1.5rem 0;}
+    footer {background:#003366; color:#fff; text-align:center; padding:1.5rem 1rem; font-size:0.9rem;}
+    @media (max-width:600px){nav{flex-direction:column; aligning-items:stretch;} nav a{width:100%; text-align:center;}}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Thuned LLC</h1>
+    <p>Virtual (Fractional) CISO & Security Consulting Services</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>Thuned LLC provides on‑demand, executive‑level security leadership for organizations that need strategic guidance without the overhead of a full‑time chief information security officer. Our virtual CISO model delivers seasoned expertise to align security initiatives with business objectives, manage risk, and ensure compliance.</p>
+    <div class="cta">
+      <p>Ready to strengthen your security posture? <a href="#contact">Get in touch</a> today.</p>
+    </div>
+  </section>
+
+  <section id="services">
+    <h2>Our Virtual CISO Services</h2>
+    <ul>
+      <li><strong>Security Strategy & Roadmapping:</strong> Align security initiatives with business goals and create multi‑year plans.</li>
+      <li><strong>Risk Assessment & Management:</strong> Identify, assess, prioritize, and treat information security risks.</li>
+      <li><strong>Policy & Procedure Development:</strong> Craft comprehensive, practical security policies and procedures.</li>
+      <li><strong>Regulatory & Compliance Guidance:</strong> Support for GDPR, HIPAA, PCI‑DSS, ISO 27001, NIST, SOC 2, CCPA, and more.</li>
+      <li><strong>Security Awareness & Training:</strong> Design and deliver role‑based training programs and phishing simulations.</li>
+      <li><strong>Incident Response Planning:</strong> Build, test, and refine IR plans; conduct tabletop exercises.</li>
+      <li><strong>Vendor & Third‑Party Risk Management:</strong> Assess and monitor the security posture of suppliers and partners.</li>
+      <li><strong>Security Architecture Review:</strong> Evaluate network, cloud, and application designs for gaps and best‑practice alignment.</li>
+      <li><strong>Metrics & Reporting:</strong> Define KPIs, produce executive dashboards, and report to boards and leadership.</li>
+      <li><strong>Advisory & Board Reporting:</strong> Translate technical risks into business impact for informed decision‑making.</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: <a href="mailto:info@thuned.com">info@thuned.com</a></p>
+    <p>Phone: <a href="tel:+15551234567">+1 (555) 123-4567</a></p>
+    <p>Address: 123 Security Way, Suite 400, Tech City, TC 12345</p>
+    <p><em>Note: This is a static site. For a functional contact form, consider integrating with a service like Formspree or Getform.</em></p>
+  </section>
+
+  <footer>
+    &copy; <span id="year"></span> Thuned LLC. All rights reserved.
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

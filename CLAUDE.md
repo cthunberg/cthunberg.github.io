@@ -4,68 +4,34 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-This is a static GitHub Pages site built with Jekyll using the `jekyll-theme-consulting` theme for Thuned LLC, an information security consulting company.
+This is a single‑page static website hosted on GitHub Pages. The site consists of:
 
-## Files & Directories
-
-- `_config.yml` - Jekyll configuration
-- `index.md` - Homepage content
-- `about.md` - About page
-- `services.md` - Services offered
-- `contact.md` - Contact information
-- `_posts/` - Blog posts (Markdown files)
-- `CLAUDE.md` - This file (excluded from Jekyll processing)
-- `README.md` - Original repository readme (excluded)
+- `index.html` – the single‑page home/about/services/contact experience.
+- `README.md` – original repository readme.
+- `CLAUDE.md` – this file (for future Claude sessions).
 
 ## Development
 
-### Prerequisites
-
-- Ruby (version compatible with Jekyll)
-- Bundler (Ruby gem manager)
-
-### Local Development
-
-1. Install dependencies:
-   ```bash
-   bundle install
-   ```
-
-2. Serve the site locally:
-   ```bash
-   bundle exec jekyll serve
-   ```
-
-3. Open `http://localhost:4000` in your browser
-
-### Building for Production
-
-GitHub Pages automatically builds the site when you push to the `main` branch. To build locally for preview:
-
-```bash
-bundle exec jekyll build
-```
-
-The generated site will be in the `_site/` directory.
-
-## Content Updates
-
-- Update page content by editing the `.md` files in the root directory
-- Add blog posts as Markdown files in `_posts/` with the format `YYYY-MM-DD-title.md`
-- Front matter (YAML between triple dashes) at the top of each file controls layout and metadata
+There are no build steps or dependencies. To view the site locally, simply open `index.html` in a web browser.
 
 ## Deployment
 
-This site is configured to publish from the `main` branch root. Simply push changes to GitHub and GitHub Pages will automatically rebuild and deploy the site.
+The site is configured to be published on GitHub Pages from the `main` branch (the root of the repository). Pushes to `main` will automatically update the site.
 
 ## Code Style
 
-- Use 2-space indentation for Markdown and YAML
-- Keep line lengths reasonable (< 100 characters) for readability
-- Use descriptive filenames for blog posts
+- HTML: Use 2‑space indentation.
+- CSS: Embedded in `<style>` tag; keep formatting consistent.
+- Comments: Use HTML comments (`<!-- -->`) where needed.
 
 ## Known Considerations
 
-- The `jekyll-theme-consulting` theme provides built-in styling and layout
-- For a functional contact form, integrate with a third-party service like Formspree or Getform
-- Images and other assets can be placed in an `assets/` directory and referenced accordingly
+- The page uses a simple, responsive layout with a fixed navigation bar.
+- For a functional contact form, integrate a third‑party service (Formspree, Getform, etc.).
+- Images or additional assets can be placed alongside `index.html` and referenced with relative paths.
+
+## Claude Code Specifics
+
+- When working on this repository, focus on maintaining the simplicity of the single‑page site.
+- Avoid introducing complex build tools or frameworks unless explicitly requested.
+- Ensure any changes remain compatible with GitHub Pages (static HTML, CSS, JavaScript).

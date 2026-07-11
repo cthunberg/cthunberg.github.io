@@ -6,34 +6,34 @@
   <title>Thuned LLC – Security Consulting</title>
   <style>
     :root {
-      --primary: #003366;
-      --secondary: #004080;
-      --accent: #0055a4;
-      --light: #f9f9f9;
-      --dark: #333;
-      --white: #fff;
+      --bg: #000000;
+      --text: #e0e0e0;
+      --primary: #00bfff;   /* deep sky blue */
+      --secondary: #0080ff; /* brighter blue */
+      --accent: #00ffff;    /* cyan */
+      --muted: #b0b0b0;
     }
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       line-height: 1.6;
-      color: var(--dark);
-      background: var(--white);
+      color: var(--text);
+      background: var(--bg);
     }
-    a { color: var(--secondary); text-decoration: none; }
+    a { color: var(--accent); text-decoration: none; }
     a:hover { text-decoration: underline; }
     header {
       background: var(--primary);
-      color: var(--white);
+      color: var(--bg);
       text-align: center;
       padding: 2.5rem 1rem;
     }
     header img { max-height: 50px; margin-bottom: 1rem; }
-    header h1 { margin: 0 0 0.3rem; font-size: 2.2rem; }
-    header p { font-size: 1.1rem; opacity: 0.9; }
+    header h1 { margin: 0 0 0.3rem; font-size: 2.2rem; color: var(--bg); }
+    header p { font-size: 1.1rem; opacity: 0.9; color: var(--bg); }
     nav {
       background: var(--secondary);
-      color: var(--white);
+      color: var(--bg);
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
@@ -41,7 +41,7 @@
       padding: 0.5rem;
     }
     nav a {
-      color: var(--white);
+      color: var(--bg);
       padding: 0.4rem 0.8rem;
       border-radius: 3px;
     }
@@ -50,6 +50,7 @@
       max-width: 960px;
       margin: 2.5rem auto;
       padding: 0 1rem;
+      color: var(--text);
     }
     h2 {
       color: var(--primary);
@@ -59,7 +60,7 @@
       font-size: 1.8rem;
     }
     .content { display: grid; gap: 2rem; }
-    .about-text p { margin-bottom: 1rem; }
+    .about-text p { margin-bottom: 1rem; color: var(--text); }
     .services-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -67,11 +68,11 @@
       margin-top: 1rem;
     }
     .service-card {
-      background: var(--white);
-      border: 1px solid #ddd;
+      background: #111; /* very dark gray for contrast */
+      border: 1px solid #222;
       border-radius: 6px;
       padding: 1.5rem;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+      box-shadow: 0 2px 4px rgba(0,0,0,0.3);
     }
     .service-card h3 {
       color: var(--primary);
@@ -82,28 +83,28 @@
     .service-card h3::before {
       content: "•";
       margin-right: 0.5rem;
-      color: var(--secondary);
+      color: var(--accent);
     }
     .cta {
-      background: var(--secondary);
-      color: var(--white);
+      background: var(--primary);
+      color: var(--bg);
       text-align: center;
       padding: 2.5rem 1rem;
     }
-    .cta h2 { margin-bottom: 1rem; font-size: 2rem; }
+    .cta h2 { margin-bottom: 1rem; font-size: 2rem; color: var(--bg); }
     .cta .btn {
       display: inline-block;
       background: var(--accent);
-      color: var(--white);
+      color: var(--bg);
       padding: 0.8rem 1.5rem;
       border-radius: 3px;
       font-weight: bold;
       margin-top: 1rem;
     }
-    .cta .btn:hover { background: #0066cc; }
+    .cta .btn:hover { background: #66ffff; }
     footer {
-      background: var(--primary);
-      color: var(--white);
+      background: var(--secondary);
+      color: var(--bg);
       text-align: center;
       padding: 1.5rem 1rem;
       font-size: 0.9rem;

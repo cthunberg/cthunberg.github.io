@@ -3,56 +3,37 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Thuned LLC – Bauhaus Inspired Security Consulting</title>
+  <title>Thuned LLC – Security Consulting</title>
   <style>
     :root {
-      --red: #ee3124;
-      --blue: #00429d;
-      --yellow: #fcd116;
-      --black: #000000;
-      --white: #ffffff;
-      --gray: #f0f0f0;
-      --darkgray: #333333;
+      --primary: #003366;
+      --secondary: #004080;
+      --accent: #0055a4;
+      --light: #f9f9f9;
+      --dark: #333;
+      --white: #fff;
     }
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
-      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-      background: var(--white);
-      color: var(--darkgray);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       line-height: 1.6;
+      color: var(--dark);
+      background: var(--white);
     }
-    a { color: var(--blue); text-decoration: none; }
+    a { color: var(--secondary); text-decoration: none; }
     a:hover { text-decoration: underline; }
     header {
-      background: var(--black);
+      background: var(--primary);
       color: var(--white);
       text-align: center;
-      padding: 2rem 1rem;
-      position: relative;
-      overflow: hidden;
+      padding: 2.5rem 1rem;
     }
-    header .logo {
-      max-width: 120px;
-      margin-bottom: 1rem;
-    }
-    header h1 {
-      font-size: 2.2rem;
-      margin-bottom: 0.3rem;
-    }
-    header p {
-      font-size: 1.1rem;
-      opacity: 0.9;
-    }
-    /* Decorative shapes */
-    .shape {
-      position: absolute;
-    }
-    .shape1 { top: 10%; left: 5%; width: 80px; height: 80px; background: var(--red); transform: rotate(45deg); }
-    .shape2 { bottom: 15%; right: 10%; width: 60px; height: 60px; background: var(--blue); }
-    .shape3 { top: 40%; left: 60%; width: 120px; height: 40px; background: var(--yellow); }
-    .shape4 { bottom: 20%; left: 30%; width: 50px; height: 50px; background: var(--red); border-radius: 50%; }
+    header img { max-height: 50px; margin-bottom: 1rem; }
+    header h1 { margin: 0 0 0.3rem; font-size: 2.2rem; }
+    header p { font-size: 1.1rem; opacity: 0.9; }
     nav {
-      background: var(--gray);
+      background: var(--secondary);
+      color: var(--white);
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
@@ -60,33 +41,25 @@
       padding: 0.5rem;
     }
     nav a {
-      color: var(--black);
+      color: var(--white);
       padding: 0.4rem 0.8rem;
       border-radius: 3px;
     }
-    nav a:hover {
-      background: var(--white);
-    }
+    nav a:hover { background: var(--accent); }
     section {
       max-width: 960px;
       margin: 2.5rem auto;
       padding: 0 1rem;
     }
     h2 {
-      color: var(--black);
-      border-bottom: 4px solid var(--red);
+      color: var(--primary);
+      border-bottom: 3px solid var(--secondary);
       padding-bottom: 0.3rem;
       margin-bottom: 1.5rem;
       font-size: 1.8rem;
-      display: inline-block;
     }
-    .content {
-      display: grid;
-      gap: 2rem;
-    }
-    .about-text p {
-      margin-bottom: 1rem;
-    }
+    .content { display: grid; gap: 2rem; }
+    .about-text p { margin-bottom: 1rem; }
     .services-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -95,69 +68,60 @@
     }
     .service-card {
       background: var(--white);
-      border: 2px solid var(--gray);
+      border: 1px solid #ddd;
+      border-radius: 6px;
       padding: 1.5rem;
-      text-align: left;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
     }
     .service-card h3 {
-      color: var(--blue);
+      color: var(--primary);
       margin-bottom: 0.8rem;
       display: flex;
       align-items: center;
     }
     .service-card h3::before {
-      content: "▣";
+      content: "•";
       margin-right: 0.5rem;
-      color: var(--red);
+      color: var(--secondary);
     }
     .cta {
-      background: var(--yellow);
-      color: var(--black);
+      background: var(--secondary);
+      color: var(--white);
       text-align: center;
       padding: 2.5rem 1rem;
     }
-    .cta h2 {
-      margin-bottom: 1rem;
-      font-size: 2rem;
-    }
+    .cta h2 { margin-bottom: 1rem; font-size: 2rem; }
     .cta .btn {
       display: inline-block;
-      background: var(--blue);
+      background: var(--accent);
       color: var(--white);
       padding: 0.8rem 1.5rem;
       border-radius: 3px;
       font-weight: bold;
       margin-top: 1rem;
     }
-    .cta .btn:hover {
-      background: var(--red);
-    }
+    .cta .btn:hover { background: #0066cc; }
     footer {
-      background: var(--black);
+      background: var(--primary);
       color: var(--white);
       text-align: center;
       padding: 1.5rem 1rem;
       font-size: 0.9rem;
     }
     @media (min-width: 768px) {
-      header { padding: 3rem 2rem; }
-      header h1 { font-size: 2.8rem; }
+      header { padding: 3.5rem 2rem; }
+      header h1 { font-size: 2.6rem; }
       section { padding: 0 2rem; }
     }
   </style>
 </head>
 <body>
   <header>
-    <img src="logo.svg" alt="Thuned LLC logo" class="logo">
+    <img src="logo.svg" alt="Thuned LLC logo">
     <div>
       <h1>Thuned LLC</h1>
-      <p>Bauhaus Inspired Security Consulting</p>
+      <p>Information Security Consulting & Virtual CISO Services</p>
     </div>
-    <!-- Decorative shapes -->
-    <div class="shape shape1"></div>
-    <div class="shape shape2"></div>
-    <div class="shape shape3"></div>
-    <div class="shape shape4"></div>
   </header>
 
   <nav>
@@ -170,8 +134,8 @@
     <div class="content">
       <h2>About Us</h2>
       <div class="about-text">
-        <p>We blend the clarity and geometric precision of Bauhaus design with rigorous information‑security expertise. Our virtual (fractional) CISO services deliver strategic, executive‑level security leadership without the overhead of a full‑time hire.</p>
-        <p>Our approach is rooted in functional design: clear goals, measurable outcomes, and solutions that serve both security and business objectives.</p>
+        <p>Thuned LLC provides expert information security consulting and virtual (fractional) CISO services to organizations seeking to strengthen their security posture without the overhead of a full‑time executive.</p>
+        <p>Our team brings deep technical and strategic expertise across industries, helping align security initiatives with business objectives, manage risk, and ensure compliance.</p>
       </div>
     </div>
   </section>
@@ -225,8 +189,8 @@
   </section>
 
   <section class="cta">
-    <h2>Ready to Secure Your Future?</h2>
-    <p>Contact us for a confidential consultation.</p>
+    <h2>Ready to Enhance Your Security?</h2>
+    <p>Contact us today for a confidential consultation.</p>
     <a href="#contact" class="btn">Get in Touch</a>
   </section>
 

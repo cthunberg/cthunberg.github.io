@@ -4,39 +4,36 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-This repository contains a single-page static website for Thuned LLC, a virtual/fractional CISO and security consulting firm. The site includes:
+This is a single‑page static website hosted on GitHub Pages, designed with a Bauhaus aesthetic (primary colors, geometric shapes, sans‑serif typography). The site presents Thuned LLC, a virtual/fractional CISO and security consulting firm.
 
-- `index.html` – the main page with header/logo, navigation, about, services, call-to-action, contact, and footer.
-- `logo.svg` – a simple shield logo used in the header.
+- `index.html` – the sole page containing all content (about, services, contact) and Bauhaus‑style design.
+- `logo.svg` – simple Bauhaus‑inspired logo (red square, blue circle, yellow triangle) with the company name.
 - `README.md` – original repository readme.
-- `CLAUDE.md` – this file (guidance for future Claude sessions).
+- `CLAUDE.md` – this file (for future Claude sessions).
 
 ## Development
 
-There are no build steps or dependencies. To view the site locally:
-
-1. Open `index.html` in any web browser.
-2. Optionally, serve it with a local server (e.g., `python -m http.server`) to test relative links.
+There are no build steps or dependencies. To view the site locally, simply open `index.html` in a web browser.
 
 ## Deployment
 
-The site is configured to publish via GitHub Pages from the `main` branch (the repository root). Push changes to `main` and GitHub will automatically rebuild and deploy the site.
+The site is configured to be published on GitHub Pages from the `main` branch (the repository root). Pushes to `main` will automatically update the site.
 
 ## Code Style
 
-- HTML: 2-space indentation; semantic elements used where appropriate.
-- CSS: Custom properties (variables) for colors; responsive layout with media queries.
-- SVG: Simple logo; keep paths simple and scalable.
-- Comments: Use HTML comments (`<!-- -->`) for explanations; avoid leaving debug code.
+- HTML: Use 2‑space indentation.
+- CSS: Embedded in `<style>` tag; keep formatting consistent, use CSS variables for Bauhaus palette.
+- SVG: Keep shapes simple, primary colors, and readable text.
+- Comments: Use HTML comments (`<!-- -->`) where needed.
 
 ## Known Considerations
 
-- The logo (`logo.svg`) is a basic shield icon; replace with a more refined brand mark if desired.
-- For a functional contact form, integrate a third‑party service such as Formspree, Getform, or similar.
-- Images or additional assets can be placed alongside `index.html` and referenced with relative paths.
+- The design follows Bauhaus principles: limited color palette (red, blue, yellow, black, white), geometric shapes, clear hierarchy.
+- Ensure any added images or assets respect the same aesthetic (simple shapes, primary colors).
+- For a functional contact form, integrate a third‑party service (Formspree, Getform, etc.) while preserving the visual style.
 
 ## Claude Code Specifics
 
-- When working on this repository, focus on maintaining the clean, professional appearance suitable for an infosec consulting business.
-- Avoid adding heavy frameworks or build tools unless explicitly requested; the strength of this site is its simplicity and speed.
-- Ensure any changes remain compatible with GitHub Pages (static HTML, CSS, JS, SVG).
+- When working on this repository, focus on maintaining the Bauhaus‑inspired design and the simplicity of the single‑page site.
+- Avoid introducing heavy frameworks or build tools unless explicitly requested.
+- Keep any changes compatible with GitHub Pages (static HTML, CSS, JavaScript, SVG).

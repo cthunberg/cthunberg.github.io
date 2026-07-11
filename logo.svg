@@ -1,8 +1,10 @@
 <svg width="200" height="60" viewBox="0 0 200 60" xmlns="http://www.w3.org/2000/svg">
-  <!-- Shield background -->
-  <path d="M100 10 L30 20 L20 40 L30 60 L100 50 L170 60 L180 40 L170 20 L150 10 Z" fill="#003366"/>
-  <!-- Checkmark inside shield -->
-  <path d="M50 35 L70 55 L110 25" stroke="white" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Red square -->
+  <rect x="0" y="0" width="50" height="50" fill="#ee3124"/>
+  <!-- Blue circle -->
+  <circle cx="125" cy="30" r="20" fill="#00429d"/>
+  <!-- Yellow triangle -->
+  <polygon points="70,10 110,10 90,40" fill="#fcd116"/>
   <!-- Company name -->
-  <text x="100" y="45" font-family="Arial, sans-serif" font-size="24" fill="white" text-anchor="middle" font-weight="bold">Thuned</text>
+  <text x="100" y="50" font-family="Helvetica Neue,Helvetica,Arial,sans-serif" font-size="24" fill="#000000" text-anchor="middle" font-weight="bold">Thuned</text>
 </svg>

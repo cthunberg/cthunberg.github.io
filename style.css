@@ -5,17 +5,17 @@
 }
 
 body {
-    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-family: Georgia, serif;
     background-color: #000000;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     padding: 20px;
-background-image: url("smoke-0054.png");
-background-position: top right;
-background-size: 900px;
-   background-repeat: no-repeat;
+    background-image: url("smoke-0054.png");
+    background-position: top right;
+    background-size: 900px;
+    background-repeat: no-repeat;
 
 }
 

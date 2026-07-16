@@ -26,13 +26,13 @@ background-size: 900px;
 }
 
 .card h1 {
-    color: #547A95;
+    color: #8FABD4;
     margin-bottom: 12px;
     font-size: 2.4em;
 }
 
 .card h2 {
-    color: #E8EDF2;
+    color: #EFECE3;
     margin-bottom: 25px;
     font-size: 1.6em;
     font-weight: normal;
@@ -47,7 +47,7 @@ background-size: 900px;
 .services li {
     padding: 12px 0;
     border-bottom: 1px dashed #bdc3c7;
-    color: #C2A56D;
+    color: #4A70A9;
     font-size: 1.15em;
 }
 
@@ -57,7 +57,7 @@ background-size: 900px;
 
 .tagline {
     font-style: italic;
-    color: #547A95;
+    color: #EFECE3;
     margin-top: 20px;
     font-size: 1.1em;
 }

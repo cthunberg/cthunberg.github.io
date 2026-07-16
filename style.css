@@ -32,7 +32,7 @@ background-size: 900px;
 }
 
 .card h2 {
-    color: #3498db;
+    color: #C2A56D;
     margin-bottom: 25px;
     font-size: 1.6em;
     font-weight: normal;
@@ -47,7 +47,7 @@ background-size: 900px;
 .services li {
     padding: 12px 0;
     border-bottom: 1px dashed #bdc3c7;
-    color: #34495e;
+    color: #C2A56D;
     font-size: 1.15em;
 }
 

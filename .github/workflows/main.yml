@@ -1,5 +1,7 @@
+name: CI Pipeline
 jobs:
-  workflow:
+  build:
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout the repo
         uses: actions/checkout@v4

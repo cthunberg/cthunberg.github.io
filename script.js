@@ -23,14 +23,4 @@ document.addEventListener('DOMContentLoaded', function() {
         yearElement.textContent = new Date().getFullYear();
     }
 
-    // Simple form validation (you would typically use a backend service)
-    const contactForm = document.querySelector('.contact-info form');
-    if (contactForm) {
-        contactForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-            // In a real application, you would send this to a server
-            alert('Thank you for your message! We will get back to you soon.');
-            contactForm.reset();
-        });
-    }
 });

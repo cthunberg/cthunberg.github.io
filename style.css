@@ -32,6 +32,9 @@ header {
 .logo h1 {
     font-size: 1.8rem;
     margin-bottom: 0.3rem;
+	font-family: "Bona Nova SC", serif;
+	font-weight: 400;
+	font-style: normal;
 }
 
 .logo p {
